@@ -34,9 +34,9 @@ class Elevator extends PluginBase
     public function onEnable()
     {
         //initMyPlot
-        $this->myplot = $this->getServer()->getPluginManager()->getPlugin("MyPlot");
+        $this->myplot = $this->getServer()->getPluginManager()->getPlugin("CityBuild");
         if($this->myplot === null) {
-            $this->getLogger()->error("Das Plugin \"MyPlot\" konnte auf diesem Server nicht gefunden werden.");
+            $this->getLogger()->error("Das Plugin \"CityBuild\" konnte auf diesem Server nicht gefunden werden.");
             $this->setEnabled(false);
             return;
         }
